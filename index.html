@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Carta Animada</title>
+
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #0f0f0f;
+    color: #ffffff;
+    font-family: 'Georgia', serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    text-align: center;
+    max-width: 700px;
+    padding: 20px;
+}
+
+img {
+    width: 100%;
+    max-width: 360px;
+    border-radius: 14px;
+    opacity: 0;
+    animation: aparecerFoto 2s forwards;
+}
+
+.carta {
+    margin-top: 30px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: aparecerCarta 2s forwards;
+    animation-delay: 2.5s;
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+@keyframes aparecerFoto {
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes aparecerCarta {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- FOTO -->
+    <img src="fbd54534-3b1b-4efa-8c8e-1a6b23463683.jpeg" alt="Nós dois">
+
+    <!-- CARTA -->
+    <div class="carta">
+        <p>
+        Depois dessa imagem, vêm palavras que talvez eu nunca consiga dizer
+        com a mesma clareza olhando nos seus olhos.
+        </p>
+
+        <p>
+        Você chegou na minha vida em um tempo de aprendizado,
+        e sem perceber, se tornou parte da minha história.
+        </p>
+
+        <p>
+        Não prometo perfeição,
+        mas prometo cuidado, verdade e presença.
+        </p>
+
+        <p>
+        Se hoje eu acredito em futuro,
+        é porque imagino você nele.
+        </p>
+    </div>
+
+</div>
+
+</body>
+</html>
